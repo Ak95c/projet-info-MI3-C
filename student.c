@@ -8,5 +8,6 @@ void run_student_mode() {
     
     // La Personne 2 écrira toute sa logique ici plus tard
     // (affichage des questions, calcul du score, etc.)
+    //coquile vide histoire de pouvoir faire un test a modifier juste apres
+    
 }
-#coquile vide histoire de pouvoir faire un test a modifier juste apres
