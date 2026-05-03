@@ -22,11 +22,11 @@ int main() { // Début de la fonction principale (le point d'entrée de ton prog
                 run_teacher_mode(); // Appelle la fonction du mode enseignant (qui sera codée dans teacher.c)
                 break; // Quitte le 'switch' pour éviter d'exécuter les cas suivants
                 
-            case 2: // Si l'utilisateur a tapé '2'
+            case 2: 
                 run_student_mode(); // Appelle la fonction du mode étudiant (qui sera codée dans student.c)
                 break; // Quitte le 'switch'
                 
-            case 3: // Si l'utilisateur a tapé '3'
+            case 3: 
                 printf("Goodbye!\n"); // Affiche un message d'au revoir (la boucle while s'arrêtera juste après)
                 break; // Quitte le 'switch'
                 
