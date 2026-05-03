@@ -26,5 +26,3 @@ clean:
 
 
 
-//projet_qcm: main.c teacher.c student.c quiz_io.c
-	gcc main.c teacher.c student.c quiz_io.c -o projet_qcm
