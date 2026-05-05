@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "prototypes.h" // Inclut ton fichier "prototypes.h" pour que le main connaisse tes structures et fonctions
-
+#include <string.h>
 int main() { // Début de la fonction principale (le point d'entrée de ton programme)
     
     int choice = 0; // Déclare une variable locale pour stocker le choix tapé au clavier (initialisée à 0)
