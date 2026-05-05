@@ -40,7 +40,7 @@ printf ("Voulez vous qu'il y est des réponses multiples ? Répondez par oui (av
 scanf ("%d", &newquiz.multiple_answers) ;
 } while (newquiz.multiple_answers != 0 && newquiz.multiple_answers != 1) ;
 for (i = 0; i < nb_questions; i++){
-newquiz.list[i] = Question makeQuestion (newquiz.multiple_answers) ;
+newquiz.list[i] = makeQuestion (newquiz.multiple_answers) ; //cette ligne sera remplacé par d'autres pour constituer une vraie création de questions 
 }
 return newquiz ;
 }
