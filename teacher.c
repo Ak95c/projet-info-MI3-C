@@ -23,8 +23,7 @@ void run_teacher_mode() { // La fonction appelée par le menu principal
     // Et faire des printf/scanf pour demander le titre, le mode séquentiel, les questions, etc.
 
 Quiz newquiz ;
-char reponse_binaire[4] ;
-int reponse ;
+int i ;
 printf ("Quel est le titre du quiz ? \n") ;
 scanf ("%s", newquiz.title) ;
 do {
@@ -39,7 +38,7 @@ do {
 printf ("Voulez vous qu'il y est des réponses multiples ? Répondez par oui (avec 1) ou par non (avec 0).\n") ;
 scanf ("%d", &newquiz.multiple_answers) ;
 } while (newquiz.multiple_answers != 0 && newquiz.multiple_answers != 1) ;
-for (i = 0; i < nb_questions; i++){
+for (i = 0; i < newquiz.nb_questions; i++){
 newquiz.list[i] = makeQuestion (newquiz.multiple_answers) ; //cette ligne sera remplacé par d'autres pour constituer une vraie création de questions 
 }
 return newquiz ;
