@@ -13,7 +13,7 @@
 typedef struct {
     char text[MAX_TEXT];
     char options[4][MAX_TEXT];
-    int correct_option; 
+    int correct_option[4]; 
 } Question;
 
 // Structure pour le Quiz complet
