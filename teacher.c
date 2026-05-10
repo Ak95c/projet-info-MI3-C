@@ -47,7 +47,7 @@ for (j = 0; j < 4; j++) {
 printf("Option %d :\n", j + 1);
 scanf("%s", q.option[j]);
 }
-if (multiple_answers == 0) {
+if (newquiz.multiple_answers == 0) {
 int bonne;
 do {
 printf("Quelle est la bonne réponse ? (1-4)\n");
