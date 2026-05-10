@@ -39,7 +39,35 @@ printf ("Voulez vous qu'il y est des réponses multiples ? Répondez par oui (av
 scanf ("%d", &newquiz.multiple_answers) ;
 } while (newquiz.multiple_answers != 0 && newquiz.multiple_answers != 1) ;
 for (i = 0; i < newquiz.nb_questions; i++){
-newquiz.list[i] = makeQuestion (newquiz.multiple_answers) ; //cette ligne sera remplacé par d'autres pour constituer une vraie création de questions 
+Question q ;
+int j ;
+printf("Entrez la question :\n");
+scanf("%s", q.title);
+for (j = 0; j < 4; j++) {
+printf("Option %d :\n", j + 1);
+scanf("%s", q.option[j]);
+}
+if (multiple_answers == 0) {
+int bonne;
+do {
+printf("Quelle est la bonne réponse ? (1-4)\n");
+scanf("%d", &bonne);
+} while (bonne < 1 || bonne > 4);
+for (j = 0; j < 4; j++) {
+q.correct_option[j] = 0;
+}
+q.correct_option[bonne - 1] = 1;
+}
+else {
+printf("Entrez les bonnes réponses (1 = oui, 0 = non)\n");
+for (j = 0; j < 4; j++) {
+do {
+printf("Option %d est correcte ? (1/0)\n", j + 1);
+scanf("%d", &q.correct_option[j]);
+} while (q.correct_option[j] != 0 && q.correct_option[j] != 1);
+}
+}
+newquiz.list[i] = q ;
 }
 return newquiz ;
 }
