@@ -45,7 +45,7 @@ printf("Entrez la question :\n");
 scanf("%s", q.title);
 for (j = 0; j < 4; j++) {
 printf("Option %d :\n", j + 1);
-scanf("%s", q.option[j]);
+scanf("%s", q.options[j]);
 }
 if (newquiz.multiple_answers == 0) {
 int bonne;
