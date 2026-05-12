@@ -25,7 +25,7 @@ void run_teacher_mode() { // La fonction appelée par le menu principal
 Quiz newquiz ;
 int i ;
 printf ("Quel est le titre du quiz ? \n") ;
-scanf ("%255[^\n]", newquiz.title) ;
+scanf (" %255[^\n]", newquiz.title) ;
 do {
 printf ("Voulez vous que ce quiz soit séquentiel ? Répondez par oui (avec 1) ou par non (avec 0).\n") ;
 scanf ("%d", &newquiz.sequential_mode) ;
