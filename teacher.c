@@ -42,7 +42,7 @@ for (i = 0; i < newquiz.nb_questions; i++){
 Question q ;
 int j ;
 printf("Entrez la question :\n");
-scanf("%s", q.text);
+scanf(" %255[^\n]", q.text);
 for (j = 0; j < 4; j++) {
 printf("Option %d :\n", j + 1);
 scanf("%s", q.options[j]);
