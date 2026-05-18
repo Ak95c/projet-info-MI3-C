@@ -26,6 +26,10 @@ int i ;
 printf ("Quel est le titre du quiz ? \n") ;
 scanf (" %255[^\n]", newquiz->title) ;
 do {
+printf ("Voulez vous qu'il y est des points négatifs ? Répondez par oui (avec 1) ou par non (avec 0).\n") ;
+scanf ("%d", &newquiz->negative_points) ;
+} while (newquiz->negative_points != 0 && newquiz->negative_points != 1) ;
+do {
 printf ("Voulez vous que ce quiz soit séquentiel ? Répondez par oui (avec 1) ou par non (avec 0).\n") ;
 scanf ("%d", &newquiz->sequential_mode) ;
 } while (newquiz->sequential_mode != 0 && newquiz->sequential_mode != 1) ;
