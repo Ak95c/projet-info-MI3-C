@@ -5,7 +5,7 @@
 int main() { // Début de la fonction principale (le point d'entrée de ton programme)
     
     int choice = 0; // Déclare une variable locale pour stocker le choix tapé au clavier (initialisée à 0)
-
+    Quiz q;
     while (choice != 3) { // Lance une boucle qui se répète tant que l'utilisateur ne tape pas '3' (Quitter)
         
         printf("\n=== WELCOME TO THE QCM PROJECT ===\n"); // Affiche le titre du menu principal
@@ -19,7 +19,6 @@ int main() { // Début de la fonction principale (le point d'entrée de ton prog
         switch (choice) { // Vérifie la valeur de la variable 'choice' pour agir en fonction
             
             case 1: // Si l'utilisateur a tapé '1'
-                Quiz q;
                 run_teacher_mode(&q); // Appelle la fonction du mode enseignant (qui sera codée dans teacher.c)
                 break; // Quitte le 'switch' pour éviter d'exécuter les cas suivants
                 
