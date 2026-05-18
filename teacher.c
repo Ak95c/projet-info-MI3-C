@@ -26,7 +26,7 @@ int i ;
 printf ("Quel est le titre du quiz ? \n") ;
 scanf (" %255[^\n]", newquiz->title) ;
 do {
-printf ("Voulez vous qu'il y est des points négatifs ? Répondez par oui (avec 1) ou par non (avec 0).\n") ;
+printf ("Voulez vous qu'il y ait des points négatifs ? Répondez par oui (avec 1) ou par non (avec 0).\n") ;
 scanf ("%d", &newquiz->negative_points) ;
 } while (newquiz->negative_points != 0 && newquiz->negative_points != 1) ;
 do {
@@ -38,7 +38,7 @@ printf ("Combien voulez vous de questions dans ce quiz ?\n") ;
 scanf ("%d", &newquiz->nb_questions) ;
 } while (newquiz->nb_questions < 0 || newquiz->nb_questions > 50) ;
 do {
-printf ("Voulez vous qu'il y est des réponses multiples ? Répondez par oui (avec 1) ou par non (avec 0).\n") ;
+printf ("Voulez vous qu'il y ait des réponses multiples ? Répondez par oui (avec 1) ou par non (avec 0).\n") ;
 scanf ("%d", &newquiz->multiple_answers) ;
 } while (newquiz->multiple_answers != 0 && newquiz->multiple_answers != 1) ;
 for (i = 0; i < newquiz->nb_questions; i++){
