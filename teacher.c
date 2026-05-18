@@ -23,7 +23,7 @@ void run_teacher_mode(Quiz *newquiz) { // La fonction appelée par le menu princ
     // Et faire des printf/scanf pour demander le titre, le mode séquentiel, les questions, etc.
 
 int i ;
-printf ("Attention dans les passages où du texte sera demandé quand vous sauter une ligne ce sera considéré comme la fin du texte.\n") ;
+printf ("Quand vous appuyez sur Entrée, le texte est validé.\n") ;
 printf ("Quel est le titre du quiz ? \n") ;
 scanf (" %255[^\n]", newquiz->title) ;
 do {
