@@ -1,12 +1,11 @@
-
 #include "prototypes.h"
 
 void run_student_mode() {
-    Quiz q = load_quiz_from_file(); // On charge le quiz que le prof a créé
+    Quiz q = load_quiz_from_file(); 
     int score = 0;
     int user_answer;
 
-    printf("\n--- BIENVENUE DANS LE QUIZ: %s ---\n", q.title);
+    printf("\n--- WELCOME TO QUIZ: %s ---\n", q.title);
 
     for (int i = 0; i < q.nb_questions; i++) {
         printf("\nQuestion %d: %s\n", i + 1, q.list[i].text);
@@ -14,25 +13,24 @@ void run_student_mode() {
             printf("%d. %s\n", j + 1, q.list[i].options[j]);
         }
 
-        printf("votre réponse (1-4): ");
+        printf("Your answer (1-4): ");
         scanf("%d", &user_answer);
 
-        if (user_answer == q.list[i].correct_option) {
+        // Note explicative : user_answer - 1 permet de vérifier la bonne case du tableau (0 à 3)
+        if (q.list[i].correct_option[user_answer - 1] == 1) {
             printf("Correct!\n");
-            score++; // On gagne 1 point
+            score++; 
         } else {
-            printf("FAUX La bonne réponse était: %d.\n", q.list[i].correct_option);
-            // Si le prof a activé les points négatifs, on retire 1 point
+            printf("Wrong answer!\n");
             if (q.negative_points == 1) {
                 score--;
             }
         }
 
-        // Si le mode séquentiel est activé, on prévient l'élève qu'il ne peut pas revenir en arrière
         if (q.sequential_mode == 1) {
             printf("[System] Sequential mode active: Answer locked.\n");
         }
     }
 
-    printf("\n--- SCORE FINAL: %d/%d ---\n", score, q.nb_questions);
+    printf("\n--- FINAL SCORE: %d/%d ---\n", score, q.nb_questions);
 }
