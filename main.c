@@ -24,7 +24,7 @@ int main() {
 
         switch (choice) {
             case 1:
-                run_teacher_mode();
+                run_teacher_mode(&q);
                 break;
             case 2:
                 run_student_mode();
