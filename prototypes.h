@@ -27,7 +27,7 @@ typedef struct {
 } Quiz;
 
 // Prototypes des fonctions (Noms en anglais)
-void run_teacher_mode();
+void run_teacher_mode(Quiz *q);
 void run_student_mode();
 void save_quiz_to_file(Quiz q);
 Quiz load_quiz_from_file();//Elle ne prend aucun paramètre entre ses parenthèses, et quand elle a fini de travailler, elle renvoie une structure complète de type Quiz.
