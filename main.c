@@ -5,7 +5,7 @@
 
 int main() {
     int choice = 0;
-
+    Quiz q;
     while (choice != 3) {
         printf("\n=== WELCOME TO THE QCM PROJECT ===\n");
         printf("1. Teacher Mode\n");
