@@ -24,15 +24,17 @@ Quiz load_quiz_from_file() {
         return q;
     }
 
-    // Lit l'entête
+    // Lit l'entête du quiz
     fscanf(f, "%s %d %d %d %d", q.title, &q.negative_points, &q.sequential_mode, &q.multiple_answers, &q.nb_questions);
 
-    // Lit chaque question
+    // Lit chaque question une par une
     for (int i = 0; i < q.nb_questions; i++) {
         fscanf(f, "%s", q.list[i].text);
         fscanf(f, "%s %s %s %s", q.list[i].options[0], q.list[i].options[1], q.list[i].options[2], q.list[i].options[3]);
-        fscanf(f, "%d %d %d %d", &q.list[i].correct_option[0], &q.list[i].correct_option[1], &qz_io_placeholder, &q.list[i].correct_option[2], &q.list[i].correct_option[3]);
+        // Ligne corrigée ci-dessous :
+        fscanf(f, "%d %d %d %d", &q.list[i].correct_option[0], &q.list[i].correct_option[1], &q.list[i].correct_option[2], &q.list[i].correct_option[3]);
     }
     fclose(f);
     return q;
+}
 }
