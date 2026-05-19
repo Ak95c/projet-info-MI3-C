@@ -19,7 +19,7 @@ int main() { // Début de la fonction principale (le point d'entrée de ton prog
         switch (choice) { // Vérifie la valeur de la variable 'choice' pour agir en fonction
             
             case 1: // Si l'utilisateur a tapé '1'
-                run_teacher_mode(); // Appelle la fonction du mode enseignant (qui sera codée dans teacher.c)
+                run_teacher_mode(&q); // Appelle la fonction du mode enseignant (qui sera codée dans teacher.c)
                 break; // Quitte le 'switch' pour éviter d'exécuter les cas suivants
                 
             case 2: 
