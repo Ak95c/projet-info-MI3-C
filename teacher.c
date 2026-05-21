@@ -1,4 +1,4 @@
-`#include "prototypes.h" // Inclut les structures et la constante TEACHER_PASSWORD
+#include "prototypes.h" // Inclut les structures et la constante TEACHER_PASSWORD
 
 void run_teacher_mode(Quiz *newquiz) { // La fonction appelée par le menu principal
     
