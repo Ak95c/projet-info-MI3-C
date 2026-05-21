@@ -13,7 +13,7 @@
 typedef struct {
     char text[MAX_TEXT];
     char options[4][MAX_TEXT];
-    int correct_option[4]; 
+    int correct_option[4];
 } Question;
 
 // Structure pour le Quiz complet
@@ -30,5 +30,7 @@ typedef struct {
 void run_teacher_mode(Quiz *q);
 void run_student_mode();
 void save_quiz_to_file(Quiz q);
-Quiz load_quiz_from_file();//Elle ne prend aucun paramètre entre ses parenthèses, et quand elle a fini de travailler, elle renvoie une structure complète de type Quiz.
+Quiz load_quiz_from_file(char *filename); // Prend le nom du fichier en paramètre
+void list_available_quizzes();            // Affiche les QCM disponibles
+
 #endif
