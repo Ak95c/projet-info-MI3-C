@@ -1,0 +1,21 @@
+cat > Culture_Generale.txt << 'EOF'
+0 0 0 3
+Quelle est la capitale de la France ?
+Londres
+Berlin
+Paris
+Madrid
+0 0 1 0
+En quelle annee a eu lieu la Revolution francaise ?
+1776
+1789
+1804
+1815
+0 1 0 0
+Qui a peint la Joconde ?
+Michel-Ange
+Leonard de Vinci
+Raphael
+Botticelli
+0 1 0 0
+EOF
