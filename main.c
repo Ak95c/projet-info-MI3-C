@@ -6,7 +6,7 @@
 int main() {
     int choice = 0;
     Quiz q;
-    while (choice != 3) {
+    do {
         printf("\n=== WELCOME TO THE QCM PROJECT ===\n");
         printf("1. Teacher Mode\n");
         printf("2. Student Mode\n");
@@ -36,6 +36,6 @@ int main() {
                 printf("Invalid choice, please try again.\n");
                 break;
         }
-    }
+    } while (choice != 3) ;
     return 0;
 }
