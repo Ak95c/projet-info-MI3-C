@@ -1,0 +1,13 @@
+0 0 1 2
+Lesquels de ces langages sont des langages de programmation ?
+HTML
+C
+Python
+CSS
+0 1 1 0
+Quels composants trouve-t-on dans l'unite centrale d'un ordinateur ?
+Le processeur (CPU)
+La memoire vive (RAM)
+La souris
+L'ecran
+1 1 0 0
