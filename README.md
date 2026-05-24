@@ -24,4 +24,4 @@ L'application propose deux modes d'exécution distincts dès le démarrage :
 ## 👥 L'Équipe
 *  CY Tech
 *  préING1 (2025-2026)
-* **Membres du groupe :** [Ayann] , [Isac] , [Pierre] 
+* **Membres du groupe :** Ayann , Isac , Pierre 
