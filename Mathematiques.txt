@@ -1,0 +1,19 @@
+1 1 0 3
+Combien font 7 fois 8 ?
+54
+56
+62
+48
+0 1 0 0
+Quelle est la derivee de x au carre ?
+x
+2
+2x
+x au cube
+0 0 1 0
+Quelle est la valeur approchee de Pi ?
+3.14
+2.71
+1.41
+6.28
+1 0 0 0
