@@ -1,0 +1,19 @@
+0 0 0 3
+Quelle est la capitale de la France ?
+Lyon
+Marseille
+Paris
+Lille
+0 0 1 0
+Quel est le plus grand ocean du monde ?
+Ocean Atlantique
+Ocean Indien
+Ocean Arctique
+Ocean Pacifique
+0 0 0 1
+Qui a peint la Joconde ?
+Vincent van Gogh
+Leonardo da Vinci
+Pablo Picasso
+Claude Monet
+0 1 0 0
