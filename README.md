@@ -18,5 +18,10 @@ L'application propose deux modes d'exécution distincts dès le démarrage :
 
 ### 2. Mode Étudiant 👨‍🎓
 * **Sélection :** Affichage dynamique de la liste des QCM disponibles.
-* **Passage du test :** Réponse aux questions en respectant les règles imposées par l'enseignant (choix uniques/multiples, possibilité de passer la question ou non).
-* **Évaluation automatisée :** Calcul automatique de la note finale (systématiquement ramenée sur **20 points**) affichée dès la fin du questionnaire.
+* **Passage du test :** Réponse aux questions en respectant les règles imposées par l'enseignant.
+* **Évaluation automatisée :** Calcul automatique de la note finale affichée dès la fin du questionnaire.
+
+## 👥 L'Équipe
+*  CY Tech
+*  préING1 (2025-2026)
+* **Membres du groupe :** [Ayann] , [Isac] , [Pierre] 
