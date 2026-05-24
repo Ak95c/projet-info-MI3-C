@@ -9,12 +9,12 @@ Notre application répond à ce besoin avec deux modes principaux :
 L'application propose deux modes d'exécution distincts dès le démarrage :
 
 ### 1. Mode Enseignant 🧑‍🏫
-* **Sécurisation :** Accès protégé par un mot de passe (défini en constante ou modifiable).
+* **Sécurisation :** Accès protégé par un mot de passe (CY2026).
 * **Création de QCM :** Création interactive de questionnaires exportés et sauvegardés directement dans des fichiers.
 * **Paramétrage global du QCM :**
   * Activation/Désactivation des points négatifs en cas de mauvaise réponse.
-  * Autorisation de réponses multiples (plusieurs propositions vraies par question).
-  * Activation du mode séquentiel (obligation de répondre avant de passer à la question suivante).
+  * Autorisation de réponses multiples .
+  * Activation du mode séquentiel.
 
 ### 2. Mode Étudiant 👨‍🎓
 * **Sélection :** Affichage dynamique de la liste des QCM disponibles.
