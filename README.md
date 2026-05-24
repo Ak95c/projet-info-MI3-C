@@ -6,7 +6,7 @@ Notre application répond à ce besoin avec deux modes principaux :
 
  ## 🚀 Fonctionnalités Clés
 
-L'application propose deux modes d'exécution distincts dès le démarrage :
+L'application propose deux modes d'exécution au démarrage :
 
 ### 1. Mode Enseignant 🧑‍🏫
 * **Sécurisation :** Accès protégé par un mot de passe (CY2026).
